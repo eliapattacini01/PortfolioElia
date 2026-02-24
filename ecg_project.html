@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ECG beat Classification </title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/cdb0909cb4.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+            <nav>
+                <img src="images/elia2.png" class="logo">
+                <ul id="sidemenu">
+                <li><a href="#header"> Home </a></li>
+                <li><a href="#header"> Data </a></li>
+                <li><a href="#about">Preprocess </a></li>
+                <li><a href="#services">Model </a></li>
+                <li><a href="#portfolio">Artificial data </a></li>
+                <li><a href="#contact"> Results </a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>    
+            </div>
+            <div class="container">
+                <h1 class="subtitle"> Beat Types </h1>
+                <div class="services-list ecg">
+                    <div> 
+                        <img src="images/N_beat.PNG" alt="N type image">
+                        <h2> N type </h2>
+                        <ul>
+                            <li>Origin from the SA</li>
+                            <li>Normal conduction pathway</li>
+                        </ul>    
+                    </div>
+                    <div> 
+                        <img src="images/S_beat.PNG" alt="S type image">
+                        <h2> S type</h2>
+                        <ul>
+                            <li>Origin from the atria or AV node</li>
+                            <li>Follow the normal conduction pathway</li>
+                            <li>Shorter RR interval compared to the preceding beat and a longer RR interval following it</li>
+                        </ul> 
+                    </div>
+                    <div>
+                        <img src="images/V_beat.PNG" alt="V type image"> 
+                        <h2> V type </h2>
+                        <ul>
+                            <li>Origin from the ventricles</li>
+                            <li>Follow abnormal conduction pathways</li>
+                            <li>Wide and morphologically different QRS complexes</li>
+                        </ul> 
+                    </div>
+                </div>
+            </div>
+        </div>
+<!-----Model------>
+        <div id="Data">
+        
+        </div>
+    </body>
+</html>

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Portfolio Website </title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/cdb0909cb4.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="header">
+        <div class="container">
+        <nav>
+            <img src="images/elia2.png" class="logo">
+            <ul id="sidemenu">
+            <li><a href="#header"> Home </a></li>
+            <li><a href="#about">About </a></li>
+            <li><a href="#services">Projects </a></li>
+            <li><a href="#portfolio">Portfolio </a></li>
+            <li><a href="#contact"> Contact </a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>    
+        <div class="header-text">
+            <p> ML engineer </p>
+            <h1> Hi, I'm <span>Elia </span><br>Pattacini from Italy</h1>
+            
+            </div>
+        </div>      
+        </div>
+<!---------about-------->
+        <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/prova.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle"> About Me </h1>
+                    <p> Detail-oriented and proactive Biomedical Engineer with a Master's specialization in
+                        informatics, data analysis, and deep learning for biomedical applications. Experienced in
+                        developing advanced algorithms for ECG data analysis. Strong analytical skills and a solid
+                        foundation in transformer architectures and time-series data analysis
+                          </p>
+                    <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')"> Skills </p>
+                    <p class="tab-links" onclick="opentab('experience')"> Experience </p>
+                    <p class="tab-links" onclick="opentab('education')"> Education </p>
+                    <p class="tab-links" onclick="opentab('languages')"> Languages </p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>AI</span><br> Machine and deep learning algorithms</li>
+                        <li><span>Data analysis</span><br> Analysis of different kind of data</li>
+                        <li><span>Computer vision</span><br> Classification/Object detection </li>
+                        <li><span>NLP</span><br> Sentiment Analysis and chatbot </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>04/2023-06/2023</span><br>Intership at Kaunas Technology University, Lithuania</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2021-2024</span><br>Msc in Biomedical Engineering at Politecnico of Milan, Italy</li>
+                        <li><span>09/2022-02/2023</span><br>Erasmus Experience in Patras,Greece</li>
+                        <li><span>2017-2021</span><br>Bsc in Biomedical Engineering at Politecnico of Milan, Italy</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="languages">
+                    <ul>
+                        <li><span>Italian</span><br>Native</li>
+                        <li><span>English</span><br>C1 level</li>
+                        </ul>
+                    </div>
+                </div>
+                </div>
+            </div>
+       
+            </div>
+<!-----Services------>
+        <div id="services">
+            <div class="container">
+                <h1 class="subtitle"> My Skills </h1>
+                <div class="services-list">
+                <div> 
+                    <i class="fa-solid fa-code"></i>
+                    <h2> AI and Data analysis </h2>
+                    <p> Creation and train of the latest machine leatning and deep learning alghoritms, data visualization and analysis.</p>
+                    </div>
+                    <div> 
+                        <i class="fa-solid fa-crop"></i>
+                        <h2> Computer vision</h2>
+                        <p> Use of CNNs and OpenCV tools for image classification and object detection tasks.</p>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-app-store"></i>
+                        <h2>NLP</h2>
+                        <p> Use of custum or pre-trained models for Natural Language Model tasks like Sentiment Analysis or ChatBot.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!-----Portfolio------>        
+        <div id="portfolio">
+            <div class="container">
+            <h1 class="subtitle"> My projects </h1>
+                <div class="work-list">
+                     <div class="work">
+                        <img src="images/ecg.jpg">
+                         <div class="layer">
+                         <h3> ECG beat classification </h3>
+                             <p>  Use of a transformer architecture with a convolutional attention mechanism on a ECG time series for the classification of an ECG beat in three different classes (N,S,V). </p>
+                             <a href="ecg_project.html"> <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                         </div>
+                    </div>
+                     <div class="work">
+                        <img src="images/plant.jpg">
+                         <div class="layer">
+                         <h3> Computer Vision </h3>
+                             <p>Image classification </p>
+                             <br>
+                             <p>Use of open CV and mediapipe for exercise counting </p>
+                             <a href="computer_vision.html"> <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                         </div>
+                    </div>
+                     <div class="work">
+                        <img src="images/chatbot.png">
+                         <div class="layer">
+                         <h3> AI chatbot</h3>
+                             <p>  Use of openAI api for chatbot creation and huggingface transformers for sentiment analysis </p>
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!-----Contact------>               
+        <div id="contact">
+            <div class="container">
+                <div class="row">                
+                <div class="contact-left">
+                    <h1 class="subtitle"> Contact me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> eliapattacini0@gmail.com </p>
+                    <p><i class="fa-solid fa-mobile-screen-button"></i> +393343507488</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/elia.pattacini"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.linkedin.com/in/elia-pattacini-732a9822a/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/CV%20Elia%20Pattacini.pdf" download class="btn btn2"> Dowload CV</a>
+                </div>
+                <div class="contact-right">
+                   <form action="https://api.web3forms.com/submit" method="POST" name="submit-to-google-sheet" id="contact-form">
+                    <input type="hidden" name="access_key" value="c5fc246f-1d36-4478-a1d8-64168f41765e">
+                    <input type="text" name="Name" placeholder="Your Name" class="contact-inputs" required>
+                    <input type="email" name="Email" placeholder="Your email" class="contact-inputs" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message" class="contact-inputs" required></textarea>
+                    <button type="submit" class="btn btn2"> Submit</button>
+                   </form> 
+                   <span id="response-message"></span>
+                </div>
+                </div>
+            </div>
+        <div class="copyright">
+            <p>Copyright © Elia Pattacini</p>
+                
+        </div>
+        </div>
+
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+        </script>
+        <script>
+            var sidemenu = document.getElementById("sidemenu");
+            function openmenu(){
+                sidemenu.style.right= "0";
+            }
+            function closemenu(){
+                sidemenu.style.right= "-200px";
+            }
+        </script>
+        <!---
+        <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxSQ3i5RlfmCFBKyvbE2TgWmnTQzKr9PBC7vVSyOjXaAM4Z5jgA2i4jwEdmuuFawcOy/exec';
+        const form = document.forms['submit-to-google-sheet'];
+        const responseMessage = document.getElementById('response-message');
+
+        form.addEventListener('submit', e => {
+            e.preventDefault();
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    responseMessage.innerHTML = "Message sent successfully!";
+                    form.reset();
+                })
+                .catch(error => {
+                    responseMessage.innerHTML = "Error! Please try again.";
+                    console.error('Error!', error.message);
+                });
+        });
+    </script>
+-->
+    </body>
+</html>
