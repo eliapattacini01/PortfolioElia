@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Publication — Transformer ECG Classification — Elia Pattacini</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/your_kit_id.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="container">
+    <nav>
+      <a href="index.html"><img src="images/elia2.png" class="logo" alt="Elia logo"></a>
+      <ul id="sidemenu">
+        <li><a href="index.html#portfolio">← Back to Projects</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+      </ul>
+      <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+    </nav>
+
+    <h1 class="subtitle">Publication</h1>
+    <p class="section-intro">
+      Custom attention in transformer architectures for multiclass ECG beat classification.
+      <br>
+      Below is a short summary, key contributions, and how to cite the work.
+    </p>
+
+    <div class="portfolio-cta">
+      <a class="btn btn2" href="https://doi.org/10.1007/978-3-031-96538-8_9" target="_blank" rel="noopener">Open DOI</a>
+
+      <!-- Optional: link to an author-preprint PDF that YOU host (not Springer's final PDF if rights are unclear) -->
+      <!-- <a class="btn btn2" href="papers/ecg_transformer_preprint.pdf" target="_blank">Download Author Preprint (PDF)</a> -->
+    </div>
+
+    <div class="services-list">
+      <div>
+        <i class="fa-solid fa-file-lines"></i>
+        <h2>What It’s About</h2>
+        <p style="line-height:1.8;">
+          I focused on a transformer-based models for ECG beat classification, focusing on improved attention
+          mechanisms for time-series signals. The model targets multiclass classification with robust evaluation.
+        </p>
+      </div>
+
+      <div>
+        <i class="fa-solid fa-award"></i>
+        <h2>Highlights</h2>
+        <ul style="margin-top:10px; line-height:1.7;">
+          <li>Custom attention mechanism tailored to ECG morphology</li>
+          <li>Strong performance on multiclass beat classification</li>
+          <li>Emphasis on generalization and evaluation methodology</li>
+        </ul>
+      </div>
+
+      <div>
+        <i class="fa-solid fa-chart-simple"></i>
+        <h2>Results</h2>
+        <p style="line-height:1.8;">
+          Reported performance includes F1-score up to <b>0.93</b> and precision up to <b>0.95</b> on evaluated datasets,
+          with a focus on stable performance across classes.
+        </p>
+      </div>
+    </div>
+
+    <h2 style="margin-top:50px; font-size:30px;">How to Cite</h2>
+    <div class="services-list">
+      <div>
+        <i class="fa-solid fa-quote-right"></i>
+        <h2>Citation</h2>
+        <p style="line-height:1.8;">
+          Pattacini E. et al., “Custom Attention in Transformer Architectures for Multiclass ECG Beat Classification”,
+          Springer, 2025. DOI: 10.1007/978-3-031-96538-8_9
+        </p>
+      </div>
+
+      <div>
+        <i class="fa-solid fa-lock"></i>
+        <h2>Sharing the PDF</h2>
+        <p style="line-height:1.8;">
+          For copyright reasons, I link the official DOI. If you need an author manuscript/preprint for review,
+          feel free to contact me.
+        </p>
+      </div>
+    </div>
+
+    <a href="index.html#portfolio" class="btn">← Back to Projects</a>
+  </div>
+
+  <script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){ sidemenu.style.right= "0"; }
+    function closemenu(){ sidemenu.style.right= "-200px"; }
+  </script>
+</body>
+</html>

@@ -24,8 +24,8 @@
             <i class="fa-solid fa-bars" onclick="openmenu()"></i>
         </nav>    
         <div class="header-text">
-            <p> ML engineer </p>
-            <h1> Hi, I'm <span>Elia </span><br>Pattacini from Italy</h1>
+            <p>Building Predictive AI Systems for Spacecraft Diagnostics</p>
+            <h1> Hi, I'm <span>Elia </span><br>Pattacini</h1>
             
             </div>
         </div>      
@@ -39,11 +39,14 @@
                 </div>
                 <div class="about-col-2">
                     <h1 class="subtitle"> About Me </h1>
-                    <p> Detail-oriented and proactive Biomedical Engineer with a Master's specialization in
-                        informatics, data analysis, and deep learning for biomedical applications. Experienced in
-                        developing advanced algorithms for ECG data analysis. Strong analytical skills and a solid
-                        foundation in transformer architectures and time-series data analysis
-                          </p>
+                    <p> AI Engineer and Biomedical Engineer specialized in machine learning for time-series and signal processing. 
+                        Currently working on predictive diagnostics systems for spacecraft satellites, 
+                        developing end-to-end ML pipelines that anticipate system faults months in advance. 
+                        <br>
+                        Author of a peer-reviewed Springer publication on transformer architectures for ECG classification. 
+                        Passionate about building production-oriented AI systems combining deep learning, data engineering, 
+                        and large-scale signal analysis.
+                    </p>
                     <div class="tab-titles">
                     <p class="tab-links active-link" onclick="opentab('skills')"> Skills </p>
                     <p class="tab-links" onclick="opentab('experience')"> Experience </p>
@@ -52,21 +55,22 @@
                     </div>
                     <div class="tab-contents active-tab" id="skills">
                     <ul>
-                        <li><span>AI</span><br> Machine and deep learning algorithms</li>
-                        <li><span>Data analysis</span><br> Analysis of different kind of data</li>
-                        <li><span>Computer vision</span><br> Classification/Object detection </li>
-                        <li><span>NLP</span><br> Sentiment Analysis and chatbot </li>
-                        </ul>
+                        <li><span>Machine Learning</span><br> Time-series modeling, predictive diagnostics, anomaly detection (ESA & Eutelsat Collaboration)</li>
+                        <li><span>Deep Learning</span><br> Transformers, CNNs, attention mechanisms</li>
+                        <li><span>Data Engineering</span><br> Large-scale telemetry processing, SQL, feature pipelines</li>
+                        <li><span>Programming</span><br> Python, MATLAB, SQL, TensorFlow, Scikit-learn</li>
+                    </ul>
                     </div>
                     <div class="tab-contents" id="experience">
                     <ul>
-                        <li><span>04/2023-06/2023</span><br>Intership at Kaunas Technology University, Lithuania</li>
+                        <li><span>2023</span><br>Master Thesis Internship – Kaunas University of Technology, Lithuania</li>
+                        <li><span>Jan 2025 - Current</span><br>Data Scientist / Machine Learning at S.A.T.E. srlu, Venice</li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="education">
                     <ul>
                         <li><span>2021-2024</span><br>Msc in Biomedical Engineering at Politecnico of Milan, Italy</li>
-                        <li><span>09/2022-02/2023</span><br>Erasmus Experience in Patras,Greece</li>
+                        <li><span>2022-2023</span><br>Erasmus Experience in Patras,Greece</li>
                         <li><span>2017-2021</span><br>Bsc in Biomedical Engineering at Politecnico of Milan, Italy</li>
                         </ul>
                     </div>
@@ -84,59 +88,156 @@
 <!-----Services------>
         <div id="services">
             <div class="container">
-                <h1 class="subtitle"> My Skills </h1>
+                <h1 class="subtitle"> Core Expertise </h1>
                 <div class="services-list">
-                <div> 
-                    <i class="fa-solid fa-code"></i>
-                    <h2> AI and Data analysis </h2>
-                    <p> Creation and train of the latest machine leatning and deep learning alghoritms, data visualization and analysis.</p>
-                    </div>
+
                     <div> 
-                        <i class="fa-solid fa-crop"></i>
-                        <h2> Computer vision</h2>
-                        <p> Use of CNNs and OpenCV tools for image classification and object detection tasks.</p>
+                        <i class="fa-solid fa-satellite"></i>
+                        <h2>Predictive AI Systems</h2>
+                        <p>
+                        Design and deployment of end-to-end machine learning pipelines for large-scale 
+                        time-series data. Experience in anomaly detection, predictive diagnostics, 
+                        and production-ready ML systems for aerospace applications.
+                        </p>
                     </div>
+
+                    <div> 
+                        <i class="fa-solid fa-brain"></i>
+                        <h2>Deep Learning Architectures</h2>
+                        <p>
+                        Development of transformer-based and CNN models for time-series and image data. 
+                        Specialized in attention mechanisms, feature engineering, and robust model evaluation.
+                        </p>
+                    </div>
+
                     <div>
-                        <i class="fa-brands fa-app-store"></i>
-                        <h2>NLP</h2>
-                        <p> Use of custum or pre-trained models for Natural Language Model tasks like Sentiment Analysis or ChatBot.</p>
+                        <i class="fa-solid fa-database"></i>
+                        <h2>Data Engineering & Analysis</h2>
+                        <p>
+                        Large-scale data processing with Python, MATLAB and SQL. 
+                        Advanced signal analysis, telemetry processing, and scalable feature extraction pipelines.
+                        </p>
                     </div>
+
                 </div>
             </div>
         </div>
-<!-----Portfolio------>        
-        <div id="portfolio">
-            <div class="container">
-            <h1 class="subtitle"> My projects </h1>
-                <div class="work-list">
-                     <div class="work">
-                        <img src="images/ecg.jpg">
-                         <div class="layer">
-                         <h3> ECG beat classification </h3>
-                             <p>  Use of a transformer architecture with a convolutional attention mechanism on a ECG time series for the classification of an ECG beat in three different classes (N,S,V). </p>
-                             <a href="ecg_project.html"> <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                         </div>
-                    </div>
-                     <div class="work">
-                        <img src="images/plant.jpg">
-                         <div class="layer">
-                         <h3> Computer Vision </h3>
-                             <p>Image classification </p>
-                             <br>
-                             <p>Use of open CV and mediapipe for exercise counting </p>
-                             <a href="computer_vision.html"> <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                         </div>
-                    </div>
-                     <div class="work">
-                        <img src="images/chatbot.png">
-                         <div class="layer">
-                         <h3> AI chatbot</h3>
-                             <p>  Use of openAI api for chatbot creation and huggingface transformers for sentiment analysis </p>
-                         </div>
-                    </div>
+<!-- ===== Featured Work / Portfolio ===== -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="subtitle">Featured Work</h1>
+
+            <!-- Optional short intro line -->
+            <p class="section-intro">
+            A selection of industry, research, and engineering projects. Click a project to see the technical breakdown, stack, and results.
+            </p>
+
+            <div class="work-list">
+
+            <!-- 1) Satellite Predictive Diagnostics (Flagship) -->
+            <div class="work">
+                <img src="images/satellite2.jpg" alt="Satellite predictive diagnostics">
+                <div class="layer">
+                <h3>Satellite Predictive Diagnostics</h3>
+                <p>
+                    End-to-end ML pipelines for large-scale telemetry time-series.
+                    Focus on anomaly detection & predictive diagnostics to anticipate faults months in advance.
+                </p>
+
+                <div class="tags">
+                    <span>Time-Series</span>
+                    <span>Anomaly Detection</span>
+                    <span>ML Pipelines</span>
+                    <span>Python • SQL • MATLAB</span>
+                </div>
+                <a href="satellite_diagnostics.html" aria-label="Open Satellite Predictive Diagnostics project page">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
                 </div>
             </div>
+
+            <!-- 2) Senator Trading Dashboard (Full-stack / SQL) -->
+            <div class="work">
+                <img src="images/trading.jpg" alt="Senator trading dashboard">
+                <div class="layer">
+                <h3>Senator Trading Data Platform</h3>
+                <p>
+                    Full-stack web app for exploring U.S. senator trades: ingestion, PostgreSQL storage, API endpoints,
+                    and interactive visualizations. Built & deployed as a production-style project.
+                </p>
+
+                <div class="tags">
+                    <span>FastAPI</span>
+                    <span>PostgreSQL (Neon)</span>
+                    <span>Render Deploy</span>
+                    <span>Data Engineering</span>
+                </div>
+
+                <a href="senator_trading.html" aria-label="Open Senator Trading page">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+                <a href="https://senator-stock-trading-1.onrender.com/" target="_blank" rel="noopener" aria-label="Open live Senator Trading app">
+                    <i class="fa-solid fa-globe"></i>
+                </a>
+                
+                </div>
+            </div>
+
+            <!-- 3) Publication -->
+            <div class="work">
+                <img src="images/chatbot.png" alt="Transformer ECG publication">
+                <div class="layer">
+                <h3>Transformer ECG Classification (Publication)</h3>
+                <p>
+                    Peer-reviewed Springer publication on custom attention for multiclass ECG beat classification.
+                    Includes method overview, evaluation, and key results.
+                </p>
+
+                <div class="tags">
+                    <span>Transformers</span>
+                    <span>Signal Processing</span>
+                    <span>Research</span>
+                    <span>Springer</span>
+                </div>
+
+                <a href="publication.html" aria-label="Open Publication page">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+                
+                <a href="https://doi.org/10.1007/978-3-031-96538-8_9" target="_blank" rel="noopener" aria-label="Open DOI">
+                    <i class="fa-solid fa-link"></i>
+                </a>
+                
+                </div>
+            </div>
+
+            <!-- 4) New Project: Modern AI (LLM or CV) -->
+            <div class="work">
+                <img src="images/llm.jpg" alt="Modern AI project">
+                <div class="layer">
+                <h3>Modern AI Project (LLM / Vision)</h3>
+                <p>
+                    Practical project focused on modern AI systems (e.g., RAG, small-model fine-tuning, or deployed CV inference).
+                    Emphasis on engineering choices, evaluation, and real-world usability.
+                </p>
+
+                <div class="tags">
+                    <span>LLM / RAG</span>
+                    <span>Evaluation</span>
+                    <span>Deployment</span>
+                    <span>Product Thinking</span>
+                </div>
+
+                <a href="modern_ai.html" aria-label="Open Modern AI project page">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+                </div>
+            </div>
+
+            </div>
+
         </div>
+    </div>
 <!-----Contact------>               
         <div id="contact">
             <div class="container">
@@ -144,7 +245,7 @@
                 <div class="contact-left">
                     <h1 class="subtitle"> Contact me</h1>
                     <p><i class="fa-solid fa-paper-plane"></i> eliapattacini0@gmail.com </p>
-                    <p><i class="fa-solid fa-mobile-screen-button"></i> +393343507488</p>
+                    <p><i class="fa-solid fa-mobile-screen-button"></i> +39 3343507488</p>
                     <div class="social-icons">
                         <a href="https://www.facebook.com/elia.pattacini"><i class="fa-brands fa-facebook"></i></a>
                         <a href="https://www.linkedin.com/in/elia-pattacini-732a9822a/"><i class="fa-brands fa-linkedin"></i></a>

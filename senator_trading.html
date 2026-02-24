@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Senator Trading Platform — Elia Pattacini</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/your_kit_id.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="container">
+    <nav>
+      <a href="index.html"><img src="images/elia2.png" class="logo" alt="Elia logo"></a>
+      <ul id="sidemenu">
+        <li><a href="index.html#portfolio">← Back to Projects</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+      </ul>
+      <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+    </nav>
+
+    <h1 class="subtitle">Senator Trading Data Platform</h1>
+    <p class="section-intro">
+      A full-stack project: ingest public trading disclosures from US Senators, store clean structured data in PostgreSQL,
+      expose it through an API, and visualize trends on the web.
+    </p>
+
+    <div class="portfolio-cta">
+      <!-- Replace with your actual links -->
+      <a class="btn btn2" href="https://senator-stock-trading-1.onrender.com/" target="_blank" rel="noopener">Open Live App</a>
+      <a class="btn btn2" href="https://github.com/eliapattacini01/Senator-Stock-Trading" target="_blank" rel="noopener">View Code (GitHub)</a>
+    </div>
+
+    <div class="services-list">
+      <div>
+        <i class="fa-solid fa-layer-group"></i>
+        <h2>Architecture</h2>
+        <p style="line-height:1.8;">
+          Scraper/ETL → PostgreSQL (Neon) → FastAPI Backend → Frontend UI → Charts & Filters
+        </p>
+        <div class="tags">
+          <span>ETL</span><span>API</span><span>Database</span><span>Deployment</span>
+        </div>
+      </div>
+
+      <div>
+        <i class="fa-solid fa-database"></i>
+        <h2>Database</h2>
+        <p style="line-height:1.8;">
+          Schema designed for fast queries and filtering. Focus on deduplication, constraints, and indexing for the most
+          common user queries (senator, ticker, date range, transaction type).
+        </p>
+        <div class="tags">
+          <span>PostgreSQL</span><span>Indexes</span><span>Constraints</span>
+        </div>
+      </div>
+
+      <div>
+        <i class="fa-solid fa-rocket"></i>
+        <h2>Deployment</h2>
+        <p style="line-height:1.8;">
+          Backend deployed on Render, DB hosted on Neon. Environment variables, CORS configuration, and API base URL
+          handling for production reliability.
+        </p>
+        <div class="tags">
+          <span>Render</span><span>Neon</span><span>CORS</span><span>Env Vars</span>
+        </div>
+      </div>
+    </div>
+
+    <h2 style="margin-top:50px; font-size:30px;">Engineering Highlights</h2>
+    <div class="services-list">
+      <div>
+        <i class="fa-solid fa-filter"></i>
+        <h2>Data Cleaning</h2>
+        <ul style="margin-top:10px; line-height:1.7;">
+          <li>Normalize tickers, dates, and transaction categories</li>
+          <li>Handle duplicates across filings</li>
+          <li>Consistent IDs for aggregation</li>
+        </ul>
+      </div>
+
+      <div>
+        <i class="fa-solid fa-gauge-high"></i>
+        <h2>Performance</h2>
+        <ul style="margin-top:10px; line-height:1.7;">
+          <li>Pagination for large result sets</li>
+          <li>Indexed queries for fast filtering</li>
+          <li>Lightweight endpoints for charts</li>
+        </ul>
+      </div>
+
+      <div>
+        <i class="fa-solid fa-wand-magic-sparkles"></i>
+        <h2>Future Upgrades</h2>
+        <ul style="margin-top:10px; line-height:1.7;">
+          <li>Scheduled ingestion jobs (daily/weekly)</li>
+          <li>Anomaly detection on trading volume spikes</li>
+          <li>NLP on disclosure text for richer search</li>
+        </ul>
+      </div>
+    </div>
+
+    <a href="index.html#portfolio" class="btn">← Back to Projects</a>
+  </div>
+
+  <script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){ sidemenu.style.right= "0"; }
+    function closemenu(){ sidemenu.style.right= "-200px"; }
+  </script>
+</body>
+</html>

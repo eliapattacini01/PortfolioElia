@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Satellite Predictive Diagnostics — Elia Pattacini</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/your_kit_id.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="container">
+    <nav>
+      <a href="index.html"><img src="images/elia2.png" class="logo" alt="Elia logo"></a>
+      <ul id="sidemenu">
+        <li><a href="index.html#portfolio">← Back to Projects</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+      </ul>
+      <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+    </nav>
+
+    <h1 class="subtitle">Satellite Predictive Diagnostics</h1>
+    <p class="section-intro">
+      Predictive diagnostics on large-scale telemetry time-series. This page focuses on engineering design, constraints,
+      and measurable outcomes.
+    </p>
+
+    <div class="services-list">
+
+      <div>
+        <i class="fa-solid fa-bullseye"></i>
+        <h2>Goal</h2>
+        <p>
+          Detect early signals of abnormal behavior in spacecraft subsystems and increase the warning lead-time compared
+          to traditional detection workflows, enabling earlier investigation and mitigation.
+        </p>
+      </div>
+
+      <div>
+        <i class="fa-solid fa-triangle-exclamation"></i>
+        <h2>Key Constraints</h2>
+        <p>
+          Multi-satellite variability, non-stationary time-series, missing/irregular samples, class imbalance,
+          strict reliability requirements, and the need to avoid data leakage with time-aware validation.
+        </p>
+      </div>
+
+      <div>
+        <i class="fa-solid fa-chart-line"></i>
+        <h2>Impact</h2>
+        <p>
+          Built production-oriented ML pipelines for telemetry analytics, improving anomaly anticipation lead-time
+          by weeks-to-months (depending on scenario) and producing deployment-ready outputs for stakeholders.
+        </p>
+      </div>
+
+    </div>
+
+    <h2 style="margin-top:50px; font-size:30px;">What I Built</h2>
+    <div class="services-list">
+
+      <div>
+        <i class="fa-solid fa-gears"></i>
+        <h2>End-to-End Pipeline</h2>
+        <ul style="margin-top:10px; line-height:1.7;">
+          <li>Telemetry ingestion and quality checks</li>
+          <li>Windowing and time-based feature extraction</li>
+          <li>Train/validation strategy to prevent leakage</li>
+          <li>Model evaluation and reporting outputs</li>
+          <li>Export formats for downstream use (tables/reports)</li>
+        </ul>
+      </div>
+
+      <div>
+        <i class="fa-solid fa-database"></i>
+        <h2>Data Engineering</h2>
+        <ul style="margin-top:10px; line-height:1.7;">
+          <li>Large-scale time-series processing</li>
+          <li>Reusable feature pipelines</li>
+          <li>SQL queries + MATLAB/Python workflows</li>
+          <li>Versioned datasets & reproducibility</li>
+        </ul>
+      </div>
+
+      <div>
+        <i class="fa-solid fa-shield"></i>
+        <h2>Reliability Mindset</h2>
+        <ul style="margin-top:10px; line-height:1.7;">
+          <li>Handling of missing data</li>
+          <li>Robust evaluation and sanity checks</li>
+          <li>Clear reporting for non-ML stakeholders</li>
+          <li>Collaboration across teams/companies</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <h2 style="margin-top:50px; font-size:30px;">High-Level Architecture</h2>
+    <p class="section-intro">
+      A simplified view (no proprietary details). You can replace this with an image if you want.
+    </p>
+
+    <div class="services-list">
+      <div>
+        <i class="fa-solid fa-diagram-project"></i>
+        <h2>Pipeline Overview</h2>
+        <p style="line-height:1.8;">
+          Raw Telemetry → Cleaning/QC → Time Windowing → Feature Extraction → Training/Validation →
+          Model Outputs → Reports / Export Tables
+        </p>
+        <div class="tags">
+          <span>Time-based split</span>
+          <span>Reproducibility</span>
+          <span>Deployment-ready outputs</span>
+        </div>
+      </div>
+
+      <div>
+        <i class="fa-solid fa-toolbox"></i>
+        <h2>Tech Stack</h2>
+        <p style="line-height:1.8;">
+          Python (Pandas, NumPy, Scikit-learn), SQL, MATLAB, Git.
+          Focus on scalable time-series processing and clear evaluation reporting.
+        </p>
+        <div class="tags">
+          <span>Python</span><span>SQL</span><span>MATLAB</span><span>Git</span>
+        </div>
+      </div>
+    </div>
+
+    <a href="index.html#portfolio" class="btn">← Back to Projects</a>
+  </div>
+
+  <script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){ sidemenu.style.right= "0"; }
+    function closemenu(){ sidemenu.style.right= "-200px"; }
+  </script>
+</body>
+</html>
