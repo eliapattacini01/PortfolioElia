@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Personal Portfolio Website </title>
         <link rel="stylesheet" href="style.css">
-        <script src="https://kit.fontawesome.com/cdb0909cb4.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     </head>
     <body>
         <div id="header">
@@ -247,22 +247,43 @@
                     <p><i class="fa-solid fa-paper-plane"></i> eliapattacini0@gmail.com </p>
                     <p><i class="fa-solid fa-mobile-screen-button"></i> +39 3343507488</p>
                     <div class="social-icons">
-                        <a href="https://www.facebook.com/elia.pattacini"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://github.com/eliapattacini01"><i class="fa-brands fa-github"></i></a>
                         <a href="https://www.linkedin.com/in/elia-pattacini-732a9822a/"><i class="fa-brands fa-linkedin"></i></a>
                     </div>
                     <a href="images/CV%20Elia%20Pattacini.pdf" download class="btn btn2"> Dowload CV</a>
                 </div>
                 <div class="contact-right">
-                   <form action="https://api.web3forms.com/submit" method="POST" name="submit-to-google-sheet" id="contact-form">
-                    <input type="hidden" name="access_key" value="c5fc246f-1d36-4478-a1d8-64168f41765e">
-                    <input type="text" name="Name" placeholder="Your Name" class="contact-inputs" required>
-                    <input type="email" name="Email" placeholder="Your email" class="contact-inputs" required>
-                    <textarea name="Message" rows="6" placeholder="Your Message" class="contact-inputs" required></textarea>
-                    <button type="submit" class="btn btn2"> Submit</button>
-                   </form> 
-                   <span id="response-message"></span>
+                    <div style="background:#262626; padding: 30px; border-radius: 10px;">
+                        <h2 style="font-size: 30px; font-weight: 500; margin-bottom: 10px; color:#fff;">Let’s talk</h2>
+                        <p style="color:#ababab; line-height:1.7; margin-bottom: 18px;">
+                        For job opportunities, collaborations, or questions about my work, feel free to reach out.
+                        </p>
+
+                        <div style="display:flex; gap:14px; flex-wrap:wrap; align-items:center;">
+                        <!-- Always works: opens Gmail compose -->
+                        <a class="btn btn2 contact-btn"
+                            href="https://mail.google.com/mail/?view=cm&fs=1&to=eliapattacini0@gmail.com&su=Contact%20from%20your%20portfolio&body=Hi%20Elia%2C%0D%0A%0D%0A"
+                            target="_blank" rel="noopener">
+                            Open Gmail
+                        </a>
+
+                        <!-- Copy to clipboard -->
+                        <button class="btn btn2 contact-btn" type="button" onclick="copyEmail()">
+                            Copy email
+                        </button>
+
+                        <!-- LinkedIn message -->
+                        <a class="btn btn2 contact-btn"
+                            href="https://www.linkedin.com/in/elia-pattacini-732a9822a/"
+                            target="_blank" rel="noopener">
+                            Message on LinkedIn
+                        </a>
+                        </div>
+
+                        <p id="copy-status" style="margin-top: 14px; color:#ababab;"></p>
+                    </div>
                 </div>
-                </div>
+
             </div>
         <div class="copyright">
             <p>Copyright © Elia Pattacini</p>
@@ -293,25 +314,39 @@
                 sidemenu.style.right= "-200px";
             }
         </script>
-        <!---
         <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbxSQ3i5RlfmCFBKyvbE2TgWmnTQzKr9PBC7vVSyOjXaAM4Z5jgA2i4jwEdmuuFawcOy/exec';
-        const form = document.forms['submit-to-google-sheet'];
-        const responseMessage = document.getElementById('response-message');
+            function copyEmail() {
+            const email = "eliapattacini0@gmail.com";
+            const status = document.getElementById("copy-status");
 
-        form.addEventListener('submit', e => {
-            e.preventDefault();
-            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-                .then(response => {
-                    responseMessage.innerHTML = "Message sent successfully!";
-                    form.reset();
-                })
-                .catch(error => {
-                    responseMessage.innerHTML = "Error! Please try again.";
-                    console.error('Error!', error.message);
-                });
-        });
-    </script>
--->
+            // Clipboard API works on HTTPS (GitHub Pages) and localhost
+            if (navigator.clipboard && window.isSecureContext) {
+                navigator.clipboard.writeText(email)
+                .then(() => status.textContent = "Email copied ✅")
+                .catch(() => fallbackCopy(email, status));
+            } else {
+                fallbackCopy(email, status);
+            }
+            }
+
+            function fallbackCopy(text, statusEl) {
+            // Fallback for older browsers / non-secure contexts
+            const ta = document.createElement("textarea");
+            ta.value = text;
+            ta.style.position = "fixed";
+            ta.style.left = "-9999px";
+            document.body.appendChild(ta);
+            ta.focus();
+            ta.select();
+
+            try {
+                document.execCommand("copy");
+                statusEl.textContent = "Email copied ✅";
+            } catch (e) {
+                statusEl.textContent = "Copy failed — email: " + text;
+            }
+            document.body.removeChild(ta);
+            }
+        </script>
     </body>
 </html>

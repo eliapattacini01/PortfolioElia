@@ -452,3 +452,14 @@ nav .fa-solid{
   gap: 14px;
   flex-wrap: wrap;
 }
+.contact-btn{
+    display: inline-block !important;
+    margin: 0 !important;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+  }
+  .contact-btn:focus{
+    outline: 2px solid rgba(255,0,79,0.6);
+    outline-offset: 2px;
+  }
