@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FAQ Chatbot (LLM) — Elia Pattacini</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/your_kit_id.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="container">
+    <nav>
+      <a href="index.html"><img src="images/elia2.png" class="logo" alt="Elia logo"></a>
+      <ul id="sidemenu">
+        <li><a href="index.html#portfolio">← Back to Projects</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+      </ul>
+      <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+    </nav>
+
+    <h1 class="subtitle">E-Commerce Chatbot (LLM)</h1>
+    <p class="section-intro">
+      A conversational AI assistant for e-commerce FAQs, powered by a large language model. It answers product questions,
+      assists with order tracking, and guides users through the shopping experience, deployed as a live Streamlit app.
+    </p>
+
+    <div class="portfolio-cta">
+      <a class="btn btn2" href="https://e-commerce-chatbot-v.streamlit.app/" target="_blank" rel="noopener">Open Live App</a>
+    </div>
+
+    <div class="services-list">
+      <div>
+        <i class="fa-solid fa-bullseye"></i>
+        <h2>Goal</h2>
+        <p>
+          Build a practical LLM-powered chatbot that handles e-commerce use cases: product discovery, FAQs,
+          and conversational guidance.
+        </p>
+        <div class="tags">
+          <span>LLM</span><span>Conversational AI</span><span>E-Commerce</span>
+        </div>
+      </div>
+
+      <div>
+        <i class="fa-solid fa-brain"></i>
+        <h2>LLM & RAG Design</h2>
+        <p>
+          Retrieval-Augmented Generation (RAG) grounds the model's responses in a product catalog,
+          minimising hallucinations and keeping answers accurate and relevant without expensive fine-tuning.
+        </p>
+        <div class="tags">
+          <span>RAG</span><span>Embeddings</span><span>Vector Search</span>
+        </div>
+      </div>
+
+      <div>
+        <i class="fa-solid fa-rocket"></i>
+        <h2>Deployment</h2>
+        <p>
+          Shipped as an interactive Streamlit app with a clean chat UI, session memory, and instant public access —
+          ready to demo and iterate on without infrastructure overhead.
+        </p>
+        <div class="tags">
+          <span>Streamlit</span><span>Cloud Deploy</span><span>Product Thinking</span>
+        </div>
+      </div>
+    </div>
+
+    <h2 style="margin-top:50px; font-size:30px;">What I Built</h2>
+    <div class="services-list">
+      <div>
+        <i class="fa-solid fa-gears"></i>
+        <h2>Chatbot Pipeline</h2>
+        <ul style="margin-top:10px; line-height:1.7;">
+          <li>User query → retrieval from product knowledge base</li>
+          <li>Context injection into LLM prompt</li>
+          <li>Response generation with conversation history</li>
+          <li>Streamlit session state for multi-turn memory</li>
+        </ul>
+      </div>
+
+      <div>
+        <i class="fa-solid fa-database"></i>
+        <h2>Knowledge Base</h2>
+        <ul style="margin-top:10px; line-height:1.7;">
+          <li>Product catalog chunked and embedded</li>
+          <li>Similarity search to find relevant context</li>
+          <li>Prompt engineering to reduce hallucinations</li>
+          <li>Fallback handling for out-of-scope queries</li>
+        </ul>
+      </div>
+
+      <div>
+        <i class="fa-solid fa-gauge-high"></i>
+        <h2>Evaluation</h2>
+        <ul style="margin-top:10px; line-height:1.7;">
+          <li>Qualitative testing across query types</li>
+          <li>Relevance and faithfulness checks</li>
+          <li>Iterative prompt tuning based on failure cases</li>
+          <li>Latency profiling for user experience</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2 style="margin-top:50px; font-size:30px;">Architecture & Tech Stack</h2>
+    <div class="services-list">
+      <div>
+        <i class="fa-solid fa-diagram-project"></i>
+        <h2>Pipeline Overview</h2>
+        <p style="line-height:1.8;">
+          User Message → Vector Retrieval → Context Assembly → LLM Prompt → Response → Chat UI
+        </p>
+        <div class="tags">
+          <span>RAG</span><span>Prompt Engineering</span><span>Session Memory</span>
+        </div>
+      </div>
+
+      <div>
+        <i class="fa-solid fa-toolbox"></i>
+        <h2>Tech Stack</h2>
+        <p style="line-height:1.8;">
+          Python, LLM API, vector embeddings, Streamlit.
+          Focused on rapid prototyping, clean UX, and straightforward deployment.
+        </p>
+        <div class="tags">
+          <span>Python</span><span>LLM API</span><span>Streamlit</span><span>VertexAI</span><span>RAG</span>
+        </div>
+      </div>
+    </div>
+
+    <a href="index.html#portfolio" class="btn">← Back to Projects</a>
+  </div>
+
+  <script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){ sidemenu.style.right= "0"; }
+    function closemenu(){ sidemenu.style.right= "-200px"; }
+  </script>
+</body>
+</html>
